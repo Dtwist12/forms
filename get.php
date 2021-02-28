@@ -8,18 +8,18 @@
 </head>
 <body>
     <?php
-$name = htmlspecialchars($_GET['name']);
+$name = htmlspecialchars($_GET['Name']);
 $Email = htmlspecialchars($_GET['Email']);
 $Videogames = htmlspecialchars($_GET['Videogames']);
 $Anime = htmlspecialchars($_GET['Anime']);
 $Password = htmlspecialchars($_GET['Password']);
     ?>
-    
-    <h1> Hey there<?= $name ?>! </h1>
+    <div>
+    <h1> Hey there <?= $name ?>! </h1>
     <h2> Here is your email: <?=$Email ?> </h2>
     <h3> Your most played Videogame is: <?=$Videogames?> </h3>
     <h3> Your Fave Anime is: <?=$Anime?> </h3>
     <h3> your password: <?=$Password?> </h3>
-
+</div>
 </body>
 </html>
